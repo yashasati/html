@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left, right, center;
+  background-attachment: fixed;
+  color: #414f57;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: 0.2em;
+}
+
+#mainsection {
+  background: white;
+  box-sizing: border-box;
+  height: 350px;
+  padding: 20px;
+  width: 26%;
+  margin: 10% auto;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.user_image {
+  position: relative;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+}
+
+#header {
+  padding: 40px 0 0px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #313f47;
+  font-weight: 100;
+}
+
+p {
+  letter-spacing: 2px;
+  height: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background: #fff;
+  margin: 5px;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+  line-height: 45px;
+  padding: 10px 13px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+li i {
+  font-size: 30px;
+  color: #999;
+}
+
+#hLineParent {
+  position: relative;
+}
+
+#hLine {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #c8cccf;
+  position: absolute;
+  top: 40px;
+}
