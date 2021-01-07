@@ -1,0 +1,596 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Open Sans, arial, tahoma, verdana, sans-serif;
+  background: rgb(243 247 248);
+}
+
+#top_header article {
+  display: flex;
+  height: 30px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+.top_header_left {
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+}
+.top_header_right {
+  flex-basis: 55%;
+}
+
+.top_header_right ul {
+  list-style: none;
+  display: flex;
+}
+
+.top_header_right ul li a {
+  color: #888;
+  padding: 0 3px;
+  text-decoration: none;
+  font-size: 12px;
+  border-right: 1px solid #888;
+}
+.top_header_right ul li:last-child a {
+  border: none;
+}
+
+.top_header_left a {
+  background: rgb(231, 75, 36);
+  color: rgb(255 255 255);
+  font-size: 12px;
+  padding: 0px 9px;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0px 9px 0 0px;
+  display: inline-block;
+}
+
+.top_header_left p {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(102 102 102);
+}
+/* top header block css ends here */
+
+/* main header block css starts here */
+#mainHeader {
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+
+#mainHeader article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.logoBlock {
+  flex-basis: 15%;
+}
+.searchBlock {
+  flex-basis: 50%;
+}
+.menuBlock {
+  flex-basis: 35%;
+}
+
+.bar_icon {
+  margin: 0 20px 0 0;
+}
+
+.bar_icon i {
+  font-size: 18px;
+  color: rgb(73 73 73);
+  font-weight: 500;
+}
+.logoBlock {
+  flex-basis: 13%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+  object-fit: contain;
+}
+.searchBlock .search_icon {
+  position: relative;
+}
+.search_icon i {
+  position: absolute;
+  top: 5px;
+  color: #111;
+  font-size: 18px;
+  font-weight: normal;
+}
+.searchBlock span > input {
+  height: 35px;
+  width: 500px;
+  border: none;
+  padding: 0 0px 0 33px;
+  border-bottom: 1px solid rgb(235 235 235);
+}
+.searchBlock span > input::placeholder {
+  color: #999;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* right menu block css starts here*/
+.menuBlock ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.menuBlock ul li a {
+  color: rgb(63 58 58);
+  text-decoration: none;
+  font-size: 11px;
+  justify-items: center;
+}
+.menuBlock ul li {
+  flex: 1;
+}
+.menuBlock ul li span {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  margin: 0px 2px;
+  position: relative;
+  top: 6px;
+}
+.menuBlock ul li span img {
+  height: 20px;
+  width: 20px;
+}
+
+.menuBlock ul li span i {
+  color: rgb(78 93 98);
+  font-size: 20px;
+  font-weight: lighter;
+}
+/* right menu block css ends here*/
+
+/* main header block css ends here */
+
+/* MAIN MENU BLOCK CSS STARTS HERE */
+#mainMenuBlock {
+  background: rgb(1 43 114);
+  height: 200px;
+}
+
+#mainMenuBlock nav {
+  margin: 0 auto;
+  width: 90%;
+}
+#mainMenuBlock nav > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+  display: flex;
+}
+#mainMenuBlock nav ul > li {
+  flex: 1;
+  padding: 15px 0;
+}
+#mainMenuBlock nav ul a {
+  color: rgb(255 255 255);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainMenuBlock nav ul a span img {
+  height: 24px;
+  filter: drop-shadow(0px 0px 0.1px white);
+}
+#mainMenuBlock nav ul a span {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgb(125, 146, 183);
+}
+#mainMenuBlock nav ul a:hover span {
+  color: rgb(255 255 255);
+}
+
+#mainMenuBlock nav ul li span a:last-child {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+/* dropdown menu css starts here */
+.dropdown-parent {
+  position: relative;
+}
+
+#mainMenuBlock nav ul li.dropdown-parent a.lastChild span {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.dropdown {
+  z-index: 1;
+  background: rgb(255 255 255);
+  width: 210px;
+  position: absolute;
+  right: 12px;
+  top: 82px;
+  border-radius: 6px;
+  display: none;
+}
+
+.dropdown ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+}
+
+#mainMenuBlock .dropdown ul li a {
+  color: #222;
+  text-decoration: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  font-size: 13px;
+}
+#mainMenuBlock .dropdown ul li {
+  padding: 0;
+  width: 100%;
+}
+
+#mainMenuBlock ul li:hover {
+  display: block;
+}
+
+.arrow-up {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -9px;
+  right: 30px;
+}
+.dropdown-parent:hover .dropdown {
+  display: block;
+}
+
+#mainMenuBlock nav ul a span.text_menu {
+  color: #111 !important;
+}
+
+#mainMenuBlock nav ul a span.img_icons img {
+  width: auto;
+  height: 18px !important;
+  margin: -3px 5px;
+}
+
+#mainMenuBlock .dropdown ul li a:hover {
+  background: rgb(243 247 248);
+  border-radius: 6px;
+}
+/* dropdown menu css ends here */
+
+/* Main Menu block ends here */
+
+/* mobile recharge block starts here*/
+#mobileRecharge article {
+  width: 90%;
+  margin: -112px auto;
+  background: rgb(255 255 255);
+  height: 200px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#mobileRecharge article .formBlock form {
+  display: flex;
+}
+
+#mobileRecharge article .formBlock form .leftBlock {
+  flex-basis: 75%;
+}
+
+#mobileRecharge article .formBlock form .rightBlock {
+  flex-basis: 25%;
+}
+
+.input_parent {
+  display: flex;
+  position: relative;
+}
+
+.input_parent label {
+  position: absolute;
+  color: rgb(153 153 153);
+  font-size: 15px;
+  top: 11px;
+  left: 0;
+}
+
+.input_parent div {
+  flex: 1;
+  margin: 10px;
+}
+
+.input_parent div input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.browse_plan {
+  position: absolute;
+  right: 15px;
+  top: -1px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: rgb(153 153 153);
+}
+
+.provider_img img {
+  width: 30px;
+  height: 30px;
+}
+
+ul.provider_block {
+  list-style: none;
+  padding: 0px;
+  background: rgb(255 255 255);
+  border: 1px solid rgb(238 238 238);
+  height: 180px;
+  overflow: auto;
+}
+
+.provider_block li a {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: rgb(34 34 34);
+  font-size: 15px;
+  padding: 6px 10px;
+  border-bottom: 1px solid rgb(204 204 204);
+}
+
+.provider_text {
+  padding: 4px 10px;
+}
+
+.provider_block li:last-child a {
+  border: none;
+}
+
+#mobileRecharge h3 {
+  font-size: 16px;
+  padding: 13px 8px;
+}
+
+.formBlock .leftBlock .form-group input[type="radio"] {
+  margin: 0px 8px;
+}
+
+.plans-child1 {
+  color: rgb(0 185 245);
+  margin-bottom: 2px;
+  margin-top: -3px;
+}
+
+#mobileRecharge .rightBlock input[type="checkout"] {
+  height: 22px;
+  width: 22px;
+  margin: 10px 15px 0 0px;
+}
+
+.rightBlock span {
+  margin: 0 0 0;
+  font-size: 15px;
+  color: rgb(0 185 245);
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  position: relative;
+  top: -8px;
+}
+
+.rightBlock span i {
+  margin: 3px;
+}
+
+#mobileRecharge .rightBlock p {
+  font-size: 12px;
+  color: rgb (153 153 153);
+  margin-top: -8px;
+  font-weight: 400;
+  margin-left: 43px;
+}
+
+#mobileRecharge .rightBlock button {
+  width: 100%;
+  height: 51px;
+  background: rgb(0 185 245);
+  color: rgb(255 255 255);
+  border: none;
+  margin: 20px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  border-radius: 4px;
+}
+
+.input_parent input[type="text"]:focus {
+  outline: none !important;
+  border-bottom: 2px solid rgb(0 185 245);
+}
+
+.input_parent div {
+  position: relative;
+}
+
+.input_parent input[type="text"]:focus ~ label {
+  top: -6px;
+  outline: 0;
+  transition: ease all 0.6s;
+  font-size: 12px;
+}
+
+.input_parent input[type="text"]:focus ~ label .provider1{
+  display: block;
+}
+
+/* .input_parent input[type="text"]:focus * .provider_block {
+  display: visible;
+} */
+
+/* #expand-toggle:checked ~ * .provider_block {
+  visibility: visible;
+}
+
+#expand-toggle {
+  position: absolute;
+  right: 66px;
+  top: 31px;
+  z-index: 1;
+  width: 75px;
+  height: 45px;
+  opacity: 0;
+} */
+/* mobile recharge block ends here*/
+
+/* slider block css starts header */
+#sliderBlock article {
+  width: 90%;
+  margin: 130px auto 0;
+  background: rgb(256 255 255);
+  display: flex;
+  overflow-x: scroll;
+}
+
+#sliderBlock article div {
+  margin: 5px;
+  margin-top: 20px;
+}
+
+#sliderBlock article div a {
+  text-decoration: none;
+}
+
+#sliderBlock article div a img {
+  width: 95px;
+  border-radius: 45px;
+  margin: 3px;
+}
+
+#sliderBlock article div a p {
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  color: #222;
+}
+/* slider block css ends here */
+
+/* go desi block css starts here */
+#godesiBlock article {
+  width: 90%;
+  margin: 20px auto 0;
+  background: rgb(256 255 255);
+}
+
+#godesiBlock article .godesichildBlock {
+  display: flex;
+}
+
+#godesiBlock article .godesichildBlock .leftgodesi {
+  flex-basis: 60.8%;
+}
+
+#godesiBlock article .godesichildBlock .rightgodesi {
+  flex-basis: 39.2%;
+}
+
+.rightgodesi span img {
+  height: 265px;
+  width: fit-content;
+}
+
+.leftgodesi {
+  width: 300px;
+  height: 472px;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.leftgodesi section {
+  position: absolute;
+  top: 1094px;
+  width: 54.5%;
+}
+
+.leftgodesiChild {
+  display: flex;
+}
+
+.leftgodesiChild div {
+  width: 100%;
+  border-right: 1px solid #ebebeb;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.leftgodesiChild div:last-child {
+  border-right: none;
+}
+
+.leftgodesiChild div a span {
+  display: block;
+  text-align: center;
+  margin: 2px 3px;
+  padding: 5px 0px;
+  text-decoration: none;
+}
+
+.leftgodesiChild div a {
+  text-decoration: none;
+}
+
+.leftgodesiChild div a span.lgdc1 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #494949;
+}
+
+.leftgodesiChild div a span.lgdc2 {
+  font-size: 11px;
+  color: #909090;
+}
+
+section .leftgodesiChild > id:target {
+  text-transform: capitalize;
+}
+/* go desi block css ends here */
